@@ -18,13 +18,18 @@
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-      <script src="https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/3b530001-fbac-4097-9a7e-f7868c383164"></script>
+      <!-- IBM Watson Assistant Chatbot Embed integration code and link -->
       <script>
-        window.loadWatsonAssistantChat({
-          integrationID: "",
-          region:"us-south"
-        }).then(function(instance){
-          instance.render();
+        window.watsonAssistantChatOptions = {
+            integrationID: "af83e417-3dda-4bce-8758-b462946ee9c7", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "3b530001-fbac-4097-9a7e-f7868c383164", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
         });
       </script>
 
@@ -34,14 +39,6 @@
           <div class="section">
             <a class="navbar-brand" href="index.html"><img src="images/run.png" style= "height:60px; , weight:60px;"alt=""></a>
 
-            <!-- <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn"><span class="fa fa-bars"></span></button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="index.html">Whatapp</a>
-                <a href="About.html">About Runk</a>
-              </div>
-            </div> -->
-            
             <div class="dropdown">
               <button onclick="myFunction()" class="dropbtn"><span class="fa fa-bars"></span></button>
               <div id="myDropdown" class="dropdown-content">
@@ -72,15 +69,8 @@
                   <div class="chat_icon">
                     <i class="fa fa-comments" aria-hidden="true"style=" margin-left: 15vh; color: #C71585; cursor: pointer; 
                     color:magneta; font-size: 12vh; font-weight: bold; border-radius: 50px; hover: snow;"
-                    onclick="https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/3b530001-fbac-4097-9a7e-f7868c383164"></i>
+                    onclick=""></i>
                   </div>
-
-                  <!-- <div class=" row chat_btn">
-                    <button type="button" class="btn" aria-hidden="true" style=" margin-left: 15vh; color: #C71585; cursor: pointer; background-color: #C71585; 
-                    color:snow; font-size: 20px; font-weight: bold; border-radius: 50px;"
-                    onclick="https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/3b530001-fbac-4097-9a7e-f7868c383164">
-                    CHAT</button>
-                  </div> -->
                 
                 </div>
 
