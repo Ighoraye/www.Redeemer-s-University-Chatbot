@@ -10,6 +10,13 @@
   font-weight: 100;
 }
 
+@font-face{
+  font-family: 'Autograph'
+  src:url(fonts/Autography.otf);
+  font-style:Regular;
+  font-weight: 100;
+}
+
 body, html {
     height: 100%;
 }
@@ -99,22 +106,44 @@ body, html {
   display:20s ease-in;
 }
 
+span{
+  font-size:5vh;
+  color: snow;
+  font-family: Autography;
+}
+
+@media screen and (max-width:900px) {
+  .section{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(../images/bot6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+  .edits .Mascot img{
+    display:none;
+  }
+
+  span{
+    font-size:5vh;
+    color: magenta;
+    font-family:Masiva Bold;
+  }
+}
+
 .Ola p{
   font-family: Masiva Bold;
-  /* line-height: 5vh; */
   font-size: 4vh;
   color: snow;
   margin-top: 40vh;
   margin-left: 15vh;
+}
 
 .icons .fa{
     cursor: pointer;
     color: rgb(43, 40, 40);
-}
-
-.chat_icon i:hover{
-  color: snow;
-}
-.Mascot .chat_btn{
-  font-size: 50vh;
 }
