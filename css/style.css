@@ -118,10 +118,10 @@ span{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
+    background-attachment:fixed;
     display: table;
     height: 100%;
-    position: relative;
     width: 100%;
   }
 
@@ -131,7 +131,7 @@ span{
 
   span{
     font-size:5vh;
-    color: magenta;
+    color: snow;
     font-family:Masiva Bold;
   }
 }
