@@ -114,13 +114,12 @@ span{
 
 @media screen and (max-width:900px) {
   .section{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(../images/bot6.png);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(../images/Plain1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
     background-attachment:fixed;
-    display: table;
     height: 100%;
     width: 100%;
   }
