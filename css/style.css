@@ -173,11 +173,11 @@ span{
   
   .Ola p{
     color:snow;
-    -webkit-transition: width 0.9s ease-in-out;
     transition: width 0.9s ease-in-out;
   }
 
   span{
+    display: none;
     font-size:5vh;
     color: darkblue;
     font-family:Autography;
