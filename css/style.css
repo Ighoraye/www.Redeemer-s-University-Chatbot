@@ -3,6 +3,7 @@
   margin-left: 0;
 }
 
+/* To declare specific fonts */
 @font-face{
   font-family: 'Masiva Bold'
   src:url(fonts/MasivaBold-Bold.ttf);
@@ -16,6 +17,7 @@
   font-style:Regular;
   font-weight: 100;
 }
+/* end */
 
 body, html {
     height: 100%;
@@ -95,7 +97,7 @@ body, html {
   margin-left: 7vh;
   height: 80vh;
   width: 110vh;
-  display:20s ease-in;
+  transition: 0.6s ease-in;
 }
 
 .edits .Ola img{
@@ -103,7 +105,7 @@ body, html {
   margin-left: 5vh;
   height: 35vh;
   width: 65vh;
-  display:20s ease-in;
+  transition: 0.6s ease-in;
 }
 
 span{
@@ -112,37 +114,8 @@ span{
   font-family: Autography;
 }
 
-@media  screen and (max-width:900px) {
-  .section{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(../images/bot1.png);
-    background-size:contain;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment:absolute;
-    height: 100%;
-    width: 100%;
-  }
-
-  .edits .Mascot img{
-    display:none;
-  }
-
-  .edits .Ola img{
-    /* display:none; */
-    width: 100%;
-    height: auto;
-    margin-bottom: 0%;
-  }
-
-  .col-sm-6{
-      width:83.3%;
-  }
-
-  span{
-    font-size:5vh;
-    color: snow;
-    font-family:Masiva Bold;
-  }
+.first{
+  display:none;
 }
 
 .Ola p{
@@ -157,3 +130,57 @@ span{
     cursor: pointer;
     color: rgb(43, 40, 40);
 }
+
+
+/* The Chatbot Setting on Mobile Devices */
+@media  screen and (max-width:900px) {
+  .section{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)), url(../images/bot1.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height: 100%;
+    width: 100%;
+  }
+
+  .dropbtn {
+    background-image: url(../images/blue.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .edits .Mascot img{
+    display:none;
+  }
+
+  .edits .Ola img{
+    display:none;
+  }
+
+  .col-sm-6{
+      width:83.3%;
+  }
+
+  .first{
+    display:contents;
+    font-size: 6vh;
+    font-family: Masiva Bold;
+    font-weight: bolder;
+    color:snow;
+    margin-left: 15vh;
+  }
+  
+  .Ola p{
+    color:snow;
+    -webkit-transition: width 0.9s ease-in-out;
+    transition: width 0.9s ease-in-out;
+  }
+
+  span{
+    font-size:5vh;
+    color: darkblue;
+    font-family:Autography;
+  }
+}
+
