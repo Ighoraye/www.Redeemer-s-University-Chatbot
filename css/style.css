@@ -178,9 +178,9 @@ span{
 
   span{
     display: none;
-    font-size:5vh;
+    /* font-size:5vh;
     color: darkblue;
-    font-family:Autography;
+    font-family:Autography; */
   }
 }
 
